@@ -27,6 +27,7 @@ body{
     align-items: center;
     gap: 20px;
 }
+
 .slogan{
     border-radius: 100px;
 }
@@ -62,5 +63,6 @@ input {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
+    outline: 0;
 }
 
