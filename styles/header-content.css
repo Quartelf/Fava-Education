@@ -1,6 +1,6 @@
 body {
     animation: animation ease alternate infinite;
-    background: linear-gradient(to left, #000, darkblue, #000);
+    background: linear-gradient(to left, var(--dark-base-color), var(--dark-blue-color), var(--dark-base-color));
     background-size: 300%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -21,7 +21,7 @@ body {
 
 .container-flex {
     display: flex;
-    color: aliceblue;
+    color: var(--light-blue-color);
     margin-top: 20px;
     justify-content: space-between;
     padding-left: 15px;
@@ -46,8 +46,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    color: black;
+    background-color: var(--light-base-color);
+    color: var(--dark-base-color);
     padding-right: 10px;
     padding-left: 10px;
     border-top-right-radius: 10px;
