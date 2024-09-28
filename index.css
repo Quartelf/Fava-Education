@@ -66,3 +66,31 @@ input {
     outline: 0;
 }
 
+
+.container-titulo{
+    display: flex;    
+    color: aliceblue;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.titulo{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-top: 150px;
+    font-size: 40px;
+    padding-right: 150px;
+    
+}
+
+.bloco{
+    width: 700px;
+    height: 500px;
+}
