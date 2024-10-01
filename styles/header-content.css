@@ -1,38 +1,44 @@
-body{
-    animation: animation  ease alternate infinite;
-    background: linear-gradient(to left, #000, darkblue, #000);
+body {
+    animation: animation ease alternate infinite;
+    background: linear-gradient(to left, var(--dark-base-color), var(--dark-blue-color), var(--dark-base-color));
     background-size: 300%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
-@keyframes animation{ /*DEGRADÊ DA PÁGINA*/
-    from{
+
+@keyframes animation {
+
+    /*DEGRADÊ DA PÁGINA*/
+    from {
         background-position: 0 50%;
     }
-    to{
+
+    to {
         background-position: 100% 50%;
     }
 }
-.container-flex{
-    display: flex;    
-    color: aliceblue;
+
+.container-flex {
+    display: flex;
+    color: var(--light-blue-color);
     margin-top: 20px;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .flexivel {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.slogan{
+.slogan {
     border-radius: 100px;
 }
 
-.barra_pesquisa{    
+.barra_pesquisa {
     display: flex;
 }
 
@@ -40,23 +46,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    color: black;
+    background-color: var(--light-base-color);
+    color: var(--dark-base-color);
     padding-right: 10px;
     padding-left: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
 }
+
 .icon_search:hover {
     opacity: 0.9;
-  
+
 }
 
 .icon_search:active {
     opacity: 0.8;
 }
-
 
 input {
     padding: 10px;
@@ -64,33 +70,4 @@ input {
     border-bottom-left-radius: 10px;
     border: none;
     outline: 0;
-}
-
-
-.container-titulo{
-    display: flex;    
-    color: aliceblue;
-    margin-top: 20px;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-}
-
-.titulo{
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-between;
-    padding-left: 150px;
-    padding-top: 150px;
-    font-size: 40px;
-    padding-right: 150px;
-    
-}
-
-.bloco{
-    width: 700px;
-    height: 500px;
 }
