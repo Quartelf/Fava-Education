@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fava Education</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="flexivel">
+                <a href="index.html">
+                    <img src="Fava Education.png" class="slogan" />
+                </a>
+                <div class="engenharia">
+                    <h1>ENGENHARIA DE SOFTWARE</h1>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column-menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li>Introdução</li>
+                    <ul>
+                        <li>Bibliotecas básicas em C </li>
+                    </ul>
+                    <li>Principais Bibliotecas em C</li>
+                    <ul>
+                        <li>Principais Bibliotecas</li>
+                        <li>Exemplos</li>
+                    </ul>
+                    <li>Importância das Bibliotecas</li>
+                    <li>Infográfico</li>
+                    <li>Vídeo</li>
+                    <li>Vamos Praticar!</li>
+                    <li>Concluindo...</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container-conteudo">
+            <div class="text-conteudo">
+                <h2>Tema da aula:</h2>
+                <h1>BIBLIOTECAS BÁSICAS EM C</h1>
+                <p><strong>Objetivo:</strong> Compreender e utilizar as principais bibliotecas padrão em C para
+                    facilitar o desenvolvimento de programas. </p>
+
+                <h3>Introdução</h3>
+                <p>
+                    Em C, bibliotecas são coleções de funções e macros que os programadores
+                    podem utilizar para realizar tarefas específicas sem precisar reescrever
+                    o código. Elas oferecem funções para lidar com entrada/saída, manipulação
+                    de “strings”, operações matemáticas e muito mais. As bibliotecas são
+                    inclusas no início de um programa usando a diretiva “#include”.
+                </p>
+                <p>
+                <h3>Principais Bibliotecas em C </h3>
+                <p>Aqui estão Principais Bibliotecas em C mais utilizadas e suas respectivas funcionalidades: </p>
+                <h4>stdio.h – Entrada e Saída </h4>
+                <ul>A biblioteca stdio.h (Standard Input/Output) é uma das mais fundamentais e oferece funções para
+                    entrada e saída de dados. </ul>
+                <ul>Funções principais: </ul>
+                <ul>printf(): Imprime informações na tela. </ul>
+                <ul>scanf(): Lê dados de entrada. </ul>
+                <ul>fgets(): Lê strings de uma entrada, como um arquivo ou o teclado. </ul>
+                <ul>fputs(): Grava strings em uma saída, como um arquivo ou a tela. </ul>
+                <h4>Exemplo: </h4>
+                <ul>#include stdio.h </ul>
+                <ul>int main() { </ul>
+                <ul> printf("Hello, World!\n"); </ul>
+                <ul>return 0;</ul>
+                <ul>} </ul>
+                <h4>2. stdlib.h – Utilidades Gerais </h4>
+                <ul>Esta biblioteca oferece funções para alocação de memória, controle de processos e conversões. </ul>
+                <ul>Funções principais: </ul>
+                <ul>malloc(), free(): Alocação e liberação de memória dinâmica. </ul>
+                <ul>exit(): Finaliza o programa. </ul>
+                <ul>atoi(), atof(): Convertem strings para números inteiros ou de ponto flutuante. </ul>
+                <h4>Exemplo: </h4>
+                <ul>#include stdlib.h</ul>
+                <ul>#include stdio.h </ul>
+                <ul>int main() { </ul>
+                <ul> int *arr = (int*)malloc(5 * sizeof(int));</ul>
+                <ul> if (arr == NULL) { </ul>
+                <ul>printf("Erro de alocação de memória.\n");</ul>
+                <ul>exit(1); </ul>
+                <ul> } </ul>
+                <h4>3. string.h – Manipulação de Strings </h4>
+                <ul>A biblioteca string.h oferece funções para manipulação de strings, como copiar, concatenar, e
+                    comparar. </ul>
+                <ul>Funções principais: </ul>
+                <UL>strlen(): Retorna o comprimento de uma string. </UL>
+                <ul>strcpy(): Copia uma string para outra. </ul>
+                <ul>strcat(): Concatena duas strings. </ul>
+                <ul>strcmp(): Compara duas strings. </ul>
+                <h4>Exemplo: </h4>
+                <ul>#include string.h</ul>
+                <ul>#include stdio.h </ul>
+                <ul>int main() { </ul>
+                <ul>char str1[20] = "Hello";</ul>
+                <ul>char str2[20] = "World";</ul>
+                <ul> strcat(str1, str2);</ul>
+                <ul> printf("%s\n", str1); </ul>
+                <ul> return 0; </ul>
+                <ul>} </ul>
+                <h4> 4. <math.h> – Funções Matemáticas </h4>
+                <ul>A biblioteca math.h oferece diversas funções matemáticas, como operações trigonométricas e
+                    exponenciais. </ul>
+                <ul>Funções principais: </ul>
+                <ul>pow(): Calcula potência. </ul>
+                <ul>sqrt(): Calcula raiz quadrada</ul>
+                <ul>sin(), cos(), tan(): Funções trigonométricas.</ul>
+                <h4> Exemplo: </h4>
+                <ul>#include math.h </ul>
+                <ul>#include stdio.h </ul>
+                <ul>int main() { </ul>
+                <ul> double num = 9.0;</ul>
+                <ul>printf("Raiz quadrada de %.1f é %.1f\n", num, sqrt(num)); </ul>
+                <ul> return 0; </ul>
+                <ul>} </ul>
+                <div class="card-conteudo">
+                    <div class="text-card">
+                        <p><strong>Importância das Bibliotecas </strong></p>
+                        <h1>As bibliotecas em C permitem reutilizar código
+                            já testado e otimizado, simplificando o processo
+                            de desenvolvimento e reduzindo a chance de erros.
+                            Sem elas, seria necessário escrever do zero funções
+                            complexas, como operações de entrada/saída e
+                            manipulação de dados.
+                        </h1>
+                    </div>
+                </div>
+                <p>
+                    Infográfico:
+                </p>
+                <p class="catalogo">
+
+                    <img src="bibliotecaC.jpg" alt="">
+                </p>
+                <h3>
+                    Vídeo:
+                </h3>
+                <div class="video">
+                    <img class="img-video" src="Doutor Waka.jpg">
+                    <h4>GUIA DEFINITIVO para BIBLIOTECAS em C!</h4>
+                    <p>#programming #biblioteca #doutorwaka<br>Doutor Waka</p>
+                    <button class="watch-button"
+                        onclick="window.location.href='https://www.youtube.com/watch?v=2GRXxen1-p4'">Assistir</button>
+                </div>
+            </div>
+
+            <div class="image-lampada">
+                <img src="lampada.png" alt="Imagem de Lâmpada" />
+            </div>
+        </div>
+    </div>
+    <div class="container-praticar">
+        <section class="practice">
+            <h2>Vamos Praticar!</h2>
+            <div class="links">
+                <p>Entrada e Saída de Dados com stdio.h
+                <ul>Objetivo: </ul>
+                <ul>Criar um programa que solicite ao usuário seu nome e idade, e depois exiba uma mensagem
+                    personalizada. </ul>
+                <ul>Requisitos: </ul>
+                <li>Use a função scanf() para ler os dados do usuário. </li>
+                <li>Use a função printf() para exibir os resultados. </li>
+                </p>
+                <p>Manipulação de Strings com string.h </p>
+                <ul>Objetivo: </ul>
+                <ul>Criar um programa que combine duas strings inseridas pelo usuário e exiba a string resultante. </ul>
+                <ul>Requisitos: </ul>
+                <li>Use scanf() para capturar as strings. </li>
+                <li>Use strcat() para concatenar as strings. </li>
+                <li>Exiba a string final concatenada. </li>
+                <p>Operações Matemáticas com math.h </p>
+                <ul>Objetivo: </ul>
+                <ul>Criar um programa que peça ao usuário para inserir um número e, em seguida, calcule e exiba o
+                    quadrado e a raiz quadrada desse número. </ul>
+                <ul>Requisitos: </ul>
+                <li>Use a função pow() para calcular o quadrado do número. </li>
+                <li>Use a função sqrt() para calcular a raiz quadrada do número. </li>
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h3>Concluindo...</h3>
+            <p class="text-conclucao">
+                Facilita a Programação: As bibliotecas básicas em C oferecem funções prontas
+                para muitas tarefas comuns, como ler dados, fazer cálculos e manipular
+                textos. Isso ajuda a programar de forma mais rápida e simples
+            </p>
+            <p>
+                Evita Retrabalho: Você não precisa reinventar a roda! As bibliotecas
+                já têm soluções para muitos problemas. Assim, você evita escrever
+                tudo do zero e pode focar no que realmente importa no seu programa. </p>
+            <p>
+                Bibliotecas Importantes: Algumas das mais usadas são:
+                <li>stdio.h para entrada e saída de dados (como printf e scanf); </li>
+                <li>stdlib.h para funções úteis como alocação de memória (malloc); </li>
+                <li>string.h para trabalhar com textos (strings); </li>
+                <li>math.h para operações matemáticas; </li>
+                <li>ctype.h para manipulação de caracteres (como maiúsculas e minúsculas). </li>
+            </p>
+            <p>Código Mais Limpo e Fácil de Entender: Usar essas bibliotecas
+                faz com que seu código fique mais organizado, curto e fácil
+                de ler, o que é ótimo para quem está começando e para quem
+                vai trabalhar em equipe. </p>
+            <p>Aumenta a Produtividade: Ao conhecer e usar bem essas bibliotecas,
+                você resolve problemas com menos esforço e de forma mais eficiente,
+                o que aumenta sua produtividade como programador. </p>
+        </section>
+
+        <section class="next">
+            <a href="card4.html" class="next-button">Próxima: DECLARAÇÃO DE VARIÁVEIS <img src="seta.png" alt="seta"
+                    class="seta"></a>
+        </section>
+    </div>
+</body>
+
+</html>

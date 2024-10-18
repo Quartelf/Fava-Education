@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fava Education</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="flexivel">
+                <a href="index.html">
+                    <img src="Fava Education.png" class="slogan" />
+                </a>
+                <div class="engenharia">
+                    <h1>ENGENHARIA DE SOFTWARE</h1>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column-menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li>Introdução</li>
+                    <ul>
+                        <li>O que são entrada de dados? </li>
+                    </ul>
+                    <li>Conceituando: Lógica de Programação</li>
+                    <ul>
+                        <li>O que é saída de dados?</li>
+                    </ul>
+                    <li>Funções de Saída: printf()</li>
+                    <li>Especificadores comuns:</li>
+                    <li>Funções de Entrada: scanf()</li>
+                    <li>Infográfico</li>
+                    <li>Vídeos</li>
+                    <li>Vamos Praticar!</li>
+                    <li>Concluindo...</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container-conteudo">
+            <div class="text-conteudo">
+                <h2>Tema da aula:</h2>
+                <h1>COMANDOS DE ENTRADA E SAIDA</h1>
+                <p><strong>Objetivo:</strong> compreender a função printf() para exibir dados, aprender a usar scanf()
+                    para ler dados do usuário, praticar a manipulação de dados em C e identificar e resolver problemas
+                    comuns de entrada.</p>
+
+                <h3>Introdução</h3>
+                <p>
+                    Os comandos de entrada e saída são fundamentais em qualquer linguagem de programação,
+                    pois permitem a interação entre o programa e o usuário. Em C, essas operações são realizadas
+                    por meio de funções específicas, como printf() e scanf(). Neste conteúdo, vamos entender como
+                    essas funções funcionam e como usá-las de forma eficiente para criar programas interativos e
+                    dinâmicos.
+                </p>
+                <P>Em linguagens de programação, a entrada se refere aos dados fornecidos pelo usuário ao programa,
+                    enquanto a saída é o resultado ou informação que o programa apresenta ao usuário. </P>
+                <P>Em C, as funções de entrada e saída pertencem à biblioteca padrão de entrada e saída de dados, que é
+                    incluída através da linha #include stdio.h </P>
+                <h3>O que são entrada de dados? </h3>
+                <p>
+                    Imagine que você está em uma loja e o vendedor pergunta o que você gostaria de comprar. Você
+                    responde "um par de sapatos". Nesse caso, a sua resposta
+                    — "um par de sapatos" — é a entrada que o vendedor recebeu de você.
+                </p>
+                <p>
+                    Na programação, entrada é tudo aquilo que o programa recebe do mundo externo, seja de um usuário
+                    (como quando você digita algo no teclado), de outro
+                    programa, ou de algum dispositivo. O programa precisa dessas informações para tomar decisões ou
+                    realizar tarefas.
+                </p>
+                <h3>Exemplos de entrada: </h3>
+                <li>Você digita um número no teclado. </li>
+                <li>Você clica em um botão em um site. </li>
+                <li>Você fala um comando para um assistente de voz. </li>
+                <h3>O que é saída de dados? </h3>
+                <p>Agora, pense no que acontece depois que você pede o par de sapatos ao vendedor. Ele vai te mostrar os
+                    sapatos, certo? Mostrar os sapatos
+                    é a saída da loja para você. O vendedor respondeu à sua solicitação. </p>
+                <p>Na programação, saída é o que o programa devolve para você depois de processar a entrada. Pode ser
+                    uma mensagem exibida na tela, um som que toca ou uma ação realizada pelo computador. </p>
+                <h3>Exemplos de saída: </h3>
+                <li>O computador exibe na tela o resultado de um cálculo. </li>
+                <li>O celular vibra quando você recebe uma mensagem. </li>
+                <li>Um site exibe uma confirmação depois de fazer um cadastro. </li>
+                <h3>Funções de Saída: printf() </h3>
+                <p>A função printf() é a principal ferramenta de saída em C, usada para exibir textos e variáveis no
+                    terminal. Ela permite formatar a saída de acordo com as necessidades do programa, utilizando
+                    especificadores de formato para diferentes tipos de dados. </p>
+                <h2>Exemplo básico: </h2>
+                <li>c </li>
+                <ul>Copiar código </ul>
+                <ul>#include stdio.h</ul>
+                <ul>int main() {</ul>
+                <ul> printf("Olá, Mundo!\n");</ul>
+                <ul> return 0;</ul>
+                <ul>}</ul>
+                <p>Neste exemplo, o programa exibe a frase "Olá, Mundo!" no console. O \n é um caractere especial que
+                    indica uma nova linha. </p>
+                <h3>Exibindo variáveis com printf() </h3>
+                <ul>Para exibir o valor de variáveis no console, usamos especificadores de formato, que são placeholders
+                    que indicam o tipo de dado a ser exibido. </ul>
+                <h3>Especificadores comuns: </h3>
+                <ul>%d: Exibe um número inteiro (int). </ul>
+                <ul>%f: Exibe um número com ponto flutuante (float). </ul>
+                <ul>%s: Exibe uma string (cadeia de caracteres). </ul>
+                <ul>%c: Exibe um caractere. </ul>
+                <h3>Exemplo: </h3>
+                <ul>c </ul>
+                <ul>Copiar código </ul>
+                <ul>#include stdio.h</ul>
+                <ul>int main() {</ul>
+                <ul> int idade = 25;</ul>
+                <ul> float altura = 1.75;</ul>
+                <ul>  char inicial = 'A';</ul>
+                <ul>printf("Idade: %d\n", idade);</ul>
+                <ul>printf("Altura: %.2f\n", altura); // %.2f limita o número a 2 casas decimais</ul>
+                <ul>printf("Inicial do nome: %c\n", inicial);</ul>
+                <ul> return 0;</ul>
+                <ul>}</ul>
+                <p>Neste exemplo, a função printf() exibe diferentes tipos de dados: um número inteiro, um número
+                    flutuante e um caractere. </p>
+                <h3>Funções de Entrada: scanf() </h3>
+                <p>A função scanf() permite ao usuário fornecer dados ao programa durante sua execução. Assim como o
+                    printf(), ela utiliza especificadores de formato para ler diferentes tipos de variáveis. </p>
+                <h3>Exemplo básico: </h3>
+                <ul>c </ul>
+                <ul>Copiar código </ul>
+                <ul>#include stdio.h</ul>
+                <ul>int main() {</ul>
+                <ul> int idade;</ul>
+                <ul>printf("Digite sua idade: ");</ul>
+                <ul>scanf("%d", &idade); // Lê um número inteiro fornecido pelo usuário</ul>
+                <ul>printf("Sua idade é %d anos.\n", idade);</ul>
+                <ul>return 0;</ul>
+                <ul>}</ul>
+                <p>No exemplo acima, a função scanf() captura a idade digitada pelo usuário e a armazena na variável
+                    idade, que é posteriormente exibida com o printf(). </p>
+                <h3>Especificadores usados com scanf(): </h3>
+                <li>%d: Lê um número inteiro. </li>
+                <li>%f: Lê um número com ponto flutuante (float). </li>
+                <li>%s: Lê uma string. </li>
+                <li>%c: Lê um único caractere. </li>
+                <br>
+                <div class="card5-conteudo">
+                    <div class="text-card">
+                        <p><strong>Cuidados com o scanf() </strong></p>
+                        <h1>O scanf() pode apresentar problemas ao ler strings ou caracteres se não for usado
+                            corretamente. Por exemplo, ao ler um caractere logo após ler um número, é necessário colocar
+                            um espaço antes do %c para ignorar o caractere de nova linha gerado pelo Enter.Uma forma de
+                            resolver isso é usando fflush(stdin) para limpar o buffer de entrada e remover o \n. Isso
+                            faz com que o scanf() capture o valor correto no próximo comando.
+                        </h1>
+                    </div>
+                </div>
+
+                <p>
+                    Infográfico:
+                </p>
+                <p class="catalogo">
+
+                    <img src="Comandos Entrada e Saida.png" alt="">
+                </p>
+                <h3>
+                    Vídeos:
+                </h3>
+                <div class="video">
+                    <img class="img-video" src="euteensino.jpg">
+                    <h4>Entrada e saída de dados em C! Venha aprender a programar!!!</h4>
+                    <p>Eu TI Ensino</p>
+                    <button class="watch-button"
+                        onclick="window.location.href='https://www.youtube.com/watch?v=Ka4dnwd5vJk'">Assistir</button>
+                </div>
+
+            </div>
+
+            <div class="image-lampada">
+                <img src="lampada.png" alt="Imagem de Lâmpada" />
+            </div>
+        </div>
+    </div>
+    <div class="container-praticar">
+        <section class="practice">
+            <h2>Vamos Praticar!</h2>
+            <div class="links">
+                <p>Passo a Passo: Faça login no Replit :</p>
+                <li>Faça login ou crie uma conta (caso não tenha). </li>
+                <li>Crie um novo projeto clicando em "Create" e selecione a linguagem C. </li>
+                <li>Escreva e teste os códigos fornecidos para os exercícios propostos abaixo. </li>
+                <h3>Exercício 1: Leitura de Nome, Idade e Altura </h3>
+                <p>Instruções: </p>
+                <li>Crie variáveis para armazenar o nome (string), a idade (inteiro) e a altura (float). </li>
+                <li>Use printf() para solicitar que o usuário digite seu nome, idade e altura. </li>
+                <li>Use scanf() para ler essas informações. </li>
+                <li>Imprima uma mensagem com o nome, idade e altura do usuário. </li>
+                <h3>Exercício 2: Leitura de Notas </h3>
+                <p>Instruções: </p>
+                <li>Crie duas variáveis do tipo float para armazenar as notas. </li>
+                <li>Use printf() para solicitar que o usuário digite as notas. </li>
+                <li>Use scanf() para ler as notas. </li>
+                <li>Calcule a média e imprima o resultado. </li>
+                <li> 1 - Extensão: Permitir que o programa verifique se a idade é válida (não pode ser negativa). </li>
+                <li> 2 - Extensão: Adicionar uma verificação para evitar que o usuário insira um valor não numérico
+                    (usando scanf de forma apropriada). </li>
+
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h3>Concluindo...</h3>
+            <p class="text-conclucao">
+                <li>Função printf(): Utilizada para exibir dados na tela.</li>
+                <li>Função scanf(): Usada para ler dados fornecidos pelo usuário. </li>
+                <li>Especificadores de formato: Use os corretos (como %d, %f, %c, e %s) para garantir que os valores
+                    sejam lidos e exibidos corretamente. </li>
+                <li>Cuidado com o Enter: Ao lidar com caracteres ou strings após ler números, o Enter pode ser capturado
+                    e causar erros. </li>
+            <p>Soluções para problemas de leitura: </p>
+            <li>Adicione um espaço antes de %c no scanf() para ignorar o \n deixado pelo Enter. </li>
+            <li>Use fflush(stdin) para limpar o buffer de entrada (embora isso não seja garantido em todos os
+                compiladores). </li>
+        </section>
+
+        <section class="next">
+            <a href="card6.html" class="next-button">Próxima: ESTRUTURA CONDICIONAIS <img src="seta.png" alt="seta"
+                    class="seta"></a>
+        </section>
+    </div>
+</body>
+
+</html>

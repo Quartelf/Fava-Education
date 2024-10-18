@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fava Education</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="flexivel">
+                <a href="index.html">
+                    <img src="Fava Education.png" class="slogan" />
+                </a>
+                <div class="engenharia">
+                    <h1>ENGENHARIA DE SOFTWARE</h1>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column-menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li>Introdução</li>
+                    <ul>
+                        <li>O que é Linguagem de Programação C </li>
+                    </ul>
+                    <li>Por que aprender C? </li>
+                    <ul>
+                        <li>Princípios Básicos da Linguagem de Programação C</li>
+                    </ul>
+                    <li>Estrutura Básica de um Programa em C</li>
+                    <li>Principais Conceitos da Linguagem C </li>
+                    <li>Funções </li>
+                    <li>Ponteiros e Manipulação de Memória </li>
+                    <li>Vídeo</li>
+                    <li>Vamos Praticar!</li>
+                    <li>Concluindo...</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container-conteudo">
+            <div class="text-conteudo">
+                <h2>Tema da aula:</h2>
+                <h1>LINGUAGEM DE PROGRAMAÇÃO C</h1>
+                <p><strong>Objetivo:</strong> Compreender a linguagem C e sua aplicação no desenvolvimento de softwares.
+                </p>
+
+                <h3>Introdução</h3>
+                <p>
+                    A linguagem de programação C é uma linguagem de baixo nível, conhecida por ser poderosa, eficiente e
+                    amplamente
+                    usada em diversos tipos de sistemas, incluindo sistemas operacionais, dispositivos embarcados e
+                    softwares de
+                    alta performance. Criada nos anos 1970 por Dennis Ritchie, no Bell Labs, o C se destacou por
+                    permitir o
+                    controle direto de hardware e recursos de sistema, além de ser a base para muitas outras linguagens
+                    modernas, como C++, C#, e Java.
+                </p>
+                <p>
+                <h3>Por que aprender C? </h3>
+                <ul>
+                    Aprender C oferece uma compreensão mais profunda de como os computadores funcionam, como a gestão
+                    de memória, operações de baixo nível e a criação de algoritmos eficientes. O C também é amplament
+                    e utilizado em ambientes acadêmicos e profissionais, tornando-o essencial para programadores
+                    que querem desenvolver softwares robustos e eficientes.
+                </ul>
+                </p>
+                <h3>
+                    Estrutura Básica de um Programa em C
+                </h3>
+                <p>
+                    Um programa em C é composto por funções, sendo a principal delas a função main(), onde o fluxo de
+                    execução começa. Abaixo, está um exemplo simples de um programa em C que imprime "Hello, World!" na
+                    tela:
+                <P>
+                    #include stdio.h
+                </P>
+                <ul>int main() {</ul>
+                <ul>printf("Hello, World!\n"); </ul>
+                <ul>return 0; </ul>
+                <ul>} </ul>
+
+                </p>
+                <h3>
+                    Principais Conceitos da Linguagem C
+                </h3>
+                <p>Variáveis e Tipos de Dados </p>
+                <ul>Em C, declaramos variáveis antes de usá-las, especificando o tipo de dado que ela irá armazenar.
+                    Alguns dos tipos básicos são: </ul>
+                <ul>a. int: números inteiros. </ul>
+                <ul>b. float: números de ponto flutuante. </ul>
+                <ul>char: caracteres. </ul>
+                <p>Exemplo de declaração de variáveis: </p>
+                <ul>int idade = 25; </ul>
+                <ul>float altura = 1.75; </ul>
+                <ul>char inicial = 'A'; </ul>
+                <p>Estruturas Condicionais </p>
+                <ul>O C oferece controle de fluxo através de estruturas como if, else if, e else.
+                    Isso permite que o programa tome decisões com base em condições lógicas: </ul>
+                <ul>int numero = 10; </ul>
+                <ul>if (numero > 0) { </ul>
+                <ul>printf("O número é positivo.\n");</ul>
+                <ul>} else { </ul>
+                <ul> printf("O número é negativo ou zero.\n"); </ul>
+                <ul>} </ul>
+
+                <div class="card4-conteudo">
+                    <div class="text-card">
+                        <p><strong>O que é Linguagem de Programação C</strong></p>
+                        <h1>C é uma linguagem de programação compilada de propósito geral, estruturada,
+                            imperativa, procedural, padronizada pela Organização Internacional para
+                            Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell
+                            Labs para desenvolvimento do sistema operacional Unix.
+                        </h1>
+                    </div>
+                </div>
+                <h3>
+                    Funções
+                </h3>
+                <p>
+                    As funções em C permitem a modularização do código, dividindo o programa
+                    em partes menores e reutilizáveis. Uma função é definida com um
+                    tipo de retorno, um nome e parâmetros opcionais.
+
+                    Exemplo de função que retorna a soma de dois números:
+                <ul>int soma(int a, int b) {</ul>
+                <ul> return a + b;</ul>
+                <ul>}</ul>
+                <ul>int main() { </ul>
+                <ul> int resultado = soma(3, 4); </ul>
+                <ul>printf("A soma é: %d\n", resultado);</ul>
+                <ul>return 0; </ul>
+                <ul>} </ul>
+                </p>
+                <h3>
+                    Ponteiros e Manipulação de Memória
+                </h3>
+                <p>Um dos aspectos mais avançados do C é o uso de ponteiros,
+                    que permitem acessar e manipular diretamente os endereços de
+                    memória. Um ponteiro é uma variável que armazena o endereço
+                    de outra variável. </p>
+                <ul>int x = 10; </ul>
+                <ul>int *p = &x; // 'p' armazena o endereço de 'x' </ul>
+                <ul>printf("Valor de x: %d\n", *p); // Acessa o valor de 'x' através do ponteiro </ul>
+
+                <p>
+                    Infográfico:
+                </p>
+                <p class="catalogo">
+
+                    <img src="Linguagem de Programação C.png">
+                </p>
+                <h3>
+                    Vídeo:
+                </h3>
+                <div class="video">
+                    <img class="img-video" src="imagem c.jpg">
+                    <h4>C Basics #001: Como programar em linguagem C? (2021) </h4>
+                    <p>Pietro Martins De Oliveira</p>
+                    <button class="watch-button"
+                        onclick="window.location.href='https://youtu.be/mEPkcSdPigg?si=j6aE0eQU_IQPHlRj '">Assistir</button>
+                </div>
+            </div>
+
+            <div class="image-lampada">
+                <img src="lampada.png" alt="Imagem de Lâmpada" />
+            </div>
+        </div>
+    </div>
+    <div class="container-praticar">
+        <section class="practice">
+            <h2>Vamos Praticar!</h2>
+            <div class="links">
+                <p>Exercício 1: Soma de Dois Números </p>
+                <p>Objetivo: Criar um programa que leia dois números inteiros e calcule a soma entre eles. </p>
+                <ul>Passo a Passo: </ul>
+                <li>Pergunte ao usuário para inserir dois números inteiros. </li>
+                <li>Implemente a função para somar os números. </li>
+                <li>Exiba o resultado da soma. </li>
+                <p>Exercício 2: Verificar se um Número é Par ou Ímpar </p>
+                <p>Objetivo: Criar um programa que leia um número inteiro e informe se ele é par ou ímpar. </p>
+                <ul>Passo a Passo: </ul>
+                <li>Peça ao usuário para inserir um número. </li>
+                <li>Verifique se o número é divisível por 2. </li>
+                <li>Exiba "Par" ou "Ímpar" conforme o resultado. </li>
+                <p>Exercício 3: Pesquise a História da Linguagem C </p>
+                <p>Objetivo: Pesquisar sobre a origem da linguagem C, seu criador e sua importância no desenvolvimento
+                    de sistemas operacionais</p>
+                <ul>Passo a Passo: </ul>
+                <li>Pesquise quem foi Dennis Ritchie e como ele criou a linguagem C. </li>
+                <li>Explique a influência do C no desenvolvimento de sistemas operacionais, especialmente o UNIX. </li>
+                <li>Descreva como a linguagem C evoluiu e impactou outras linguagens de programação. </li>
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h3>Concluindo...</h3>
+            <p class="text-conclucao">
+                Linguagem C: É uma linguagem eficiente e de baixo nível usada amplamente no desenvolvimento de sistemas
+                e aplicações de alta performance.
+            </p>
+            <p>
+                Variáveis e Tipos de Dados: Utilizam-se int, float, char para armazenar diferentes tipos de dados.
+            </p>
+            <P>Estruturas Condicionais: Utilizamos if, else if, e else para controlar o fluxo do programa com base em
+                condições. </P>
+            <P>Funções: Permitem a modularização e reutilização de código. </P>
+            <P>Ponteiros: Um conceito poderoso para manipulação direta de endereços de memória. </P>
+        </section>
+
+        <section class="next">
+            <a href="card3.html" class="next-button">Próxima: BIBLIOTECAS EM C <img src="seta.png" alt="seta"
+                    class="seta"></a>
+        </section>
+    </div>
+</body>
+
+</html>

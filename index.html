@@ -4,43 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagem" href="assets/images/fava-education.png">
-    <link rel="stylesheet" href="styles/var.css">
-    <link rel="stylesheet" href="styles/header-content.css">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Fava Education</title>
 </head>
 
 <body>
+    <div class="container-flex">
+        <div class="flexivel">
+            <a href="index.html">
+                <img src="Fava Education.png" class="slogan" />
+            </a>
 
-    <header>
-        <div class="container-flex">
-
-            <div class="flexivel">
-                <div>
-                    <img src="assets/images/fava-education.png" class="slogan" />
-                </div>
-                <div class="engenharia">
-                    <h1>ENGENHARIA DE SOFTWARE</h1>
-                </div>
-            </div>
-
-            <div class="flexivel">
-                <div class="barra_pesquisa">
-                    <input type="pesquisa" placeholder="Pesquisar">
-                    <div class="icon_search" id="search">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </div>
-                <div class="home">
-                    <p>HOME / SOBRE / CONTEUDOS</p>
-                </div>
+            <div class="engenharia">
+                <h1>ENGENHARIA DE SOFTWARE</h1>
             </div>
 
         </div>
-    </header>
+        <div class="flexivel">
+            <div class="barra_pesquisa">
+                <input type="pesquisa" placeholder="Pesquisar">
+                <div class="icon_search" id="search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="home">
+                <p>HOME / SOBRE / CONTEUDOS</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 
-    <script src="scripts/search.js"></script>
+    <div class="titulo">
+        <h2>Vamos aprender com o Fava</h2>
+        <img src="bloco.png" alt="">
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="header"><a href="card1.html">1° Lógica de Programação</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+
+        <div class="card">
+            <div class="header"><a href="card2.html">2° Linguagem de Programação C</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+
+        <div class="card">
+            <div class="header"><a href="card3.html">3° Bibliotecas básicas em C</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+
+        <div class="card">
+            <div class="header"><a href="card4.html">4° Declaração de variáveis</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+        <div class="card">
+            <div class="header"><a href="card5.html">5° Comandos de Entrada e Saída</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+        <div class="card">
+            <div class="header"><a href="card6.html">6° Estruturas Condicionais</a></div>
+            <div class="content">Nessa aula veremos...</div>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <div class="linha_separacao">
+            <hr>
+        </div>
+
+        <div class="container_perfis">
+            <h1 class="title_perfis">Líderes da Escola <br>Front-end</h1>
+            <div class="leaders">
+                <div class="leader">
+                    <img src="iago.png" alt="Iago Bogler">
+                    <h3>Iago Bogler</h3>
+                    <p>Desenvolvedor WEB</p>
+                </div>
+                <div class="leader">
+                    <img src="vini.png" alt="Vinicius Lucena">
+                    <h3>Vinicius Lucena</h3>
+                    <p>Desenvolvedor WEB</p>
+                </div>
+                <div class="leader">
+                    <img src="johnatan.png" alt="Johnatan Vargas">
+                    <h3>Johnatan Vargas</h3>
+                    <p>Conteudista</p>
+                </div>
+                <div class="leader">
+                    <img src="fava.png" alt="Thomas Favas">
+                    <h3>Thomas Fava</h3>
+                    <p>Design gráfico</p>
+                </div>
+                <div class="leader">
+                    <img src="gui.png" alt="Guilherme Meiring">
+                    <h3>Guilherme Meiring</h3>
+                    <p>Conteudista</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

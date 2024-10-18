@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fava Education</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="flexivel">
+                <a href="index.html">
+                    <img src="Fava Education.png" class="slogan" />
+                </a>
+                <div class="engenharia">
+                    <h1>ENGENHARIA DE SOFTWARE</h1>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column-menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li>Introdução</li>
+                    <ul>
+                        <li>Declaração de Variáveis em C </li>
+                    </ul>
+                    <li>Tipos de Variáveis em C </li>
+                    <ul>
+                        <li>Inicialização de Variáveis </li>
+                    </ul>
+                    <li>Por que Lógica é Importante na Programação?</li>
+                    <li>Regras para Nomear Variáveis em C </li>
+                    <li>Escopo de Variáveis</li>
+                    <li>Por que Lógica é Importante na Programação?</li>
+                    <li>Infográfico</li>
+                    <li>Vídeos</li>
+                    <li>Vamos Praticar!</li>
+                    <li>Concluindo...</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container-conteudo">
+            <div class="text-conteudo">
+                <h2>Tema da aula:</h2>
+                <h1>DECLARAÇÃO DE VARIÁVEIS EM C </h1>
+                <p><strong>Objetivo:</strong> Compreender como declarar e utilizar variáveis na linguagem de programação
+                    C</p>
+
+                <h3>Introdução</h3>
+                <p>
+                    Variáveis são espaços de memória reservados para armazenar dados durante a execução de um programa.
+                    Elas permitem que o valor armazenado seja utilizado, modificado e acessado ao longo do código. Em C,
+                    cada variável deve ser declarada com um tipo de dado específico.
+                </p>
+                <h3>
+                    Exemplo de uma variável:
+                </h3>
+                <p>Imagine que você tenha uma variável chamada idade que armazena o valor 25. Em C, você pode usar essa
+                    variável em cálculos ou exibi-la para o usuário, como: </p>
+                <ul>Copiar código </ul>
+                <ul>int idade = 25;</ul>
+                <ul>printf("A idade é: %d", idade);</ul>
+                <h3>Como declarar variáveis em C? </h3>
+                <p>A sintaxe básica para declarar uma variável em C é: </p>
+                <ul>Copiar código </ul>
+                <ul>tipo_da_variavel nome_da_variavel;</ul>
+                <ul>Por exemplo: </ul>
+                <ul>int numero;</ul>
+                <ul>float altura;</ul>
+                <ul>char inicial;</ul>
+                <ul>Aqui: </ul>
+                <li> int é um tipo de variável que armazena números inteiros. </li>
+                <li>float armazena números com ponto decimal. </li>
+                <li>char armazena um único caractere. </li>
+                <h3>Exemplo com atribuição</h3>
+                <p>Você pode declarar e atribuir um valor a uma variável ao mesmo tempo: </p>
+                <ul>Copiar código </ul>
+                <ul>int idade = 30;</ul>
+                <ul>char inicial = 'A';</ul>
+                <div class="card4-conteudo">
+                    <div class="text-card">
+                        <p><strong>Tipos de Variáveis em C </strong></p>
+                        <h1>C suporta vários tipos de dados, e ao declarar uma variável, você deve especificar seu tipo
+                            de dado. Aqui estão alguns tipos comuns:
+
+                        </h1>
+                        <li class="li-card">int: Armazena números inteiros, como 10, -5, ou 1000. </li>
+                        <li class="li-card">float: Armazena números com ponto flutuante, como 3.14 ou -0.001. </li>
+                        <li class="li-card">double: Armazena números com ponto flutuante de maior precisão. </li>
+                        <li class="li-card">char: Armazena um único caractere, como 'a' ou 'Z'. </li>
+                    </div>
+                </div>
+                <h3>
+                    Inicialização de Variáveis
+                </h3>
+                <p>
+                    Ao declarar uma variável, é uma boa prática inicializá-la com um valor. Se uma variável não for
+                    inicializada, seu conteúdo será indefinido e poderá causar comportamentos inesperados no programa.
+                <h3>Exemplo de inicialização: </h3>
+                <ul>Copiar código </ul>
+                <ul>int numero = 0; // Inicializando com valor 0</ul>
+                <ul>float media = 7.5; // Inicializando com um valor real</ul>
+                <ul>char letra = 'A'; // Inicializando com o caractere 'A'</ul>
+                </p>
+                <h3>
+                    Regras para Nomear Variáveis em C
+                </h3>
+                <p>Nomes válidos: Os nomes das variáveis devem começar com uma letra ou sublinhado (_), seguidos por
+                    letras, números ou sublinhados. </p>
+                <li>a. Exemplo válido: idade, _altura, notaFinal. </li>
+                <li>b. Exemplo inválido: 2idade, #altura. </li>
+                <p>Palavras reservadas: O nome da variável não pode ser uma palavra reservada do C, como int, return,
+                    if, etc. </p>
+                <p>Case-sensitive: C diferencia letras maiúsculas e minúsculas. Portanto, idade e Idade são variáveis
+                    diferentes. </p>
+                <h3>Exemplo de nomes válidos: </h3>
+                <ul>Copiar código </ul>
+                <ul>int numeroAlunos;</ul>
+                <ul>float alturaPessoa;</ul>
+                <ul>char letraInicial;</ul>
+                <h3>Escopo de Variáveis </h3>
+                <p>Em C, o escopo de uma variável define a parte do programa onde ela pode ser acessada. As variáveis
+                    podem ser: </p>
+                <ul>Locais: Declaradas dentro de funções ou blocos de código e acessíveis apenas dentro desse escopo.
+                </ul>
+                <ul>Globais: Declaradas fora de qualquer função e acessíveis por todo o programa. </ul>
+
+
+                <h3>Por que Lógica é Importante na Programação?</h3>
+                <p>Quando você escreve um programa, está basicamente criando um plano que o computador vai seguir para
+                    resolver um problema.
+                    Usar lógica ajuda você a garantir que esse plano funcione corretamente.
+                    Se você pensar de maneira clara e organizada, o computador vai entender suas instruções e fazer o
+                    que você quer.
+                </p>
+                <h3>Exemplo de variável local: </h3>
+                <ul>Copiar código </ul>
+                <ul>void funcao() {</ul>
+                <ul> int x = 10; // Variável local, acessível apenas dentro desta função</ul>
+                <ul>}</ul>
+                <h3>Exemplo de variável global: </h3>
+                <ul>Copiar código </ul>
+                <ul>int y = 20; // Variável global, acessível por todas as funções</ul>
+                <ul>int main() {</ul>
+                <ul> printf("%d", y); // Acessa a variável global y</ul>
+                <ul>}</ul>
+
+                <p>
+                    Infográfico:
+                </p>
+                <p class="catalogo">
+
+                    <img src="VariaveisC.png" alt="">
+                </p>
+                <h3>
+                    Vídeo:
+                </h3>
+                <div class="video">
+                    <img class="img-video" src="Pietro Martins.jpg">
+                    <h4>Usando variáveis em Linguagem C (2021) </h4>
+                    <p>(Guia RÁPIDO de estudos completo para INICIANTES)<br>
+                        Pietro Martins De Oliveira</p>
+                    <button class="watch-button"
+                        onclick="window.location.href='https://www.youtube.com/watch?v=QrFjyty_HK0 '">Assistir</button>
+                </div>
+            </div>
+
+            <div class="image-lampada">
+                <img src="lampada.png" alt="Imagem de Lâmpada" />
+            </div>
+        </div>
+    </div>
+    <div class="container-praticar">
+        <section class="practice">
+            <h2>Vamos Praticar!</h2>
+            <div class="links">
+                <p>Declarando Variáveis</p>
+                <p>Crie um programa em C onde você deve declarar as seguintes variáveis e imprimir seus valores: </p>
+                <p>Tutoriais do Minecraft no Hour of Code:</p>
+                <li>Uma variável int chamada idade e atribua o valor 20. </li>
+                <li>Uma variável float chamada altura e atribua o valor 1.75. </li>
+                <li>Uma variável char chamada inicial e atribua a letra 'J'. </li>
+                <p>Explorando o Escopo </p>
+                <p>Crie um programa que declare uma variável global e uma variável local dentro de uma função. Mostre
+                    como o escopo afeta o acesso às variáveis. </p>
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h3>Concluindo...</h3>
+            <p class="text-conclucao">
+                O que aprendemos sobre variáveis?
+                <li>Variáveis são áreas de armazenamento para dados usados em programas. </li>
+                <li>Em C, é necessário declarar o tipo de dado da variável antes de usá-la. </li>
+            </p>
+            <p>Tipos de dados em C: </p>
+            <li>int para números inteiros. </li>
+            <li>float para números decimais. </li>
+            <li>double para números decimais com maior precisão. </li>
+            <li>char para armazenar caracteres. </li>
+            <p>Boas práticas: </p>
+            <li>Inicializar variáveis para evitar valores indefinidos. </li>
+            <li>Seguir as regras de nomenclatura (nomes válidos, evitar palavras reservadas). </li>
+        </section>
+
+        <section class="next">
+            <a href="card5.html" class="next-button">Próxima: COMANDOS DE ENTRADA E SAIDA <img src="seta.png" alt="seta"
+                    class="seta"></a>
+        </section>
+    </div>
+</body>
+
+</html>

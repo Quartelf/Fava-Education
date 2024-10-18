@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem" href="Fava Education.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fava Education</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="flexivel">
+                <a href="index.html">
+                    <img src="Fava Education.png" class="slogan" />
+                </a>
+                <div class="engenharia">
+                    <h1>ENGENHARIA DE SOFTWARE</h1>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="column-menu">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li>Introdução</li>
+                    <ul>
+                        <li>Estruturas Condicionais </li>
+                    </ul>
+                    <li>Conceituando: Lógica de Programação</li>
+                    <ul>
+                        <li>Princípios Básicos da Lógica de Programação</li>
+                    </ul>
+                    <li>Por que Lógica é Importante na Programação?</li>
+                    <li>Infográfico</li>
+                    <li>Vídeos</li>
+                    <li>Vamos Praticar!</li>
+                    <li>Concluindo...</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container-conteudo">
+            <div class="text-conteudo">
+                <h2>Tema da aula:</h2>
+                <h1>ESTRUTURAS CONDICIONAIS</h1>
+                <p><strong>Objetivo:</strong> Compreender e utilizar estrutura condicionais em C para toma decisões.</p>
+
+                <h3>Introdução</h3>
+                <p>
+                    Estruturas condicionais são ferramentas essenciais na programação que permitem aos programas tomarem
+                    decisões. Elas possibilitam que o programa siga caminhos diferentes, dependendo do valor de uma
+                    condição ou expressão.
+                </p>
+                <p>
+                    Pense em decisões do dia a dia, como "se estiver chovendo, vou usar um guarda-chuva, senão, vou sair
+                    sem ele". Esse "se" (if) e "senão" (else) são a base das estruturas condicionais e “chovendo” a
+                    condição.
+
+                </p>
+                <P>Na programação, usamos essas estruturas para controlar o fluxo do código, permitindo que ele se
+                    comporte de maneiras diferentes conforme a entrada ou as variáveis fornecidas.</P>
+                <p>
+                    Por que usamos estruturas condicionais?
+                </p>
+                <p>
+                    Um exemplo clássico de aplicação de estruturas condicionais é o sistema de login, amplamente
+                    utilizado em sites e aplicativos. Imagine o seguinte cenário: o sistema pede ao usuário para inserir
+                    o nome de usuário e a senha. Se ambos estiverem corretos, o usuário ganha acesso à sua conta; caso
+                    contrário, uma mensagem de erro será exibida, informando que os dados são inválidos.
+                </p>
+                <h3> Estrutura básica do if </h3>
+                <p>No C, a estrutura básica de uma condicional usa a palavra-chave if, seguida de uma condição entre
+                    parênteses. Se a condição for verdadeira (ou seja, se o que estiver entre parênteses for
+                    verdadeiro), o bloco de código dentro das chaves será executado. </p>
+                <h3>Usando else para cobrir outras condições </h3>
+                <p>O else é usado para capturar o que acontece se a condição do if não for verdadeira. Ele define uma
+                    ação alternativa. </p>
+                <h3>O else if para verificar múltiplas condições </h3>
+                <p>Às vezes, temos mais de duas possibilidades. Nesses casos, podemos usar o else if para checar outra
+                    condição se a primeira for falsa. Se a segunda condição também for falsa, podemos usar um else
+                    final. </p>
+                <div class="card6-conteudo">
+                    <div class="text-card">
+                        <p><strong>Operadores Lógicos em C </strong></p>
+                        <h1>Operadores lógicos são usados em programação para combinar ou modificar expressões booleanas
+                            (que resultam em verdadeiro ou falso). Eles são fundamentais quando você deseja fazer mais
+                            de uma verificação ao mesmo tempo dentro de uma estrutura condicional. Em C, existem três
+                            operadores lógicos principais:
+                            <ul class="ul-card">E (&&) – Verdadeiro apenas se ambas as condições forem verdadeiras.
+                            </ul>
+                            <ul class="ul-card">OU (||) – Verdadeiro se qualquer uma das condições for verdadeira. </ul>
+                            <ul class="ul-card">Não(!) – Inverte o valor lógico de uma condição (verdadeiro vira falso,
+                                e falso vira verdadeiro). </ul>
+                        </h1>
+                    </div>
+                </div>
+                <h3>
+                    Operador E (&&)
+                </h3>
+                <p>
+                    O operador && é usado quando você quer que todas as condições sejam verdadeiras para que o bloco de
+                    código seja executado. Se qualquer uma das condições for falsa, o resultado será falso e o código
+                    não será executado.
+                <p>
+                <h3>2. Operador OU(||) </h3>
+                <p>O operador || é usado quando pelo menos uma das condições deve ser verdadeira para o código ser
+                    executado. Se ambas as condições forem falsas, o bloco de código será ignorado. </p>
+                <h3>
+                    3. Operador OU (!)
+                </h3>
+                <p>O operador ! inverte o valor lógico de uma expressão. Se a condição for verdadeira, o operador a
+                    torna falsa, e vice-versa. </p>
+
+                <h3>Importância dos Operadores Lógicos </h3>
+                <p>Os operadores lógicos tornam os programas mais flexíveis e poderosos, permitindo que você teste
+                    várias condições ao mesmo tempo. Eles são amplamente utilizados em qualquer tipo de verificação,
+                    como validações de formulários, controle de acesso em sistemas, e tomadas de decisão complexas em
+                    algoritmos.
+                </p>
+                <p>
+                    Infográfico:
+                </p>
+                <p class="catalogo">
+
+                    <img src="Estrutura Concional_page-0001.jpg" alt="">
+                </p>
+                <h3>
+                    Vídeos:
+                </h3>
+                <div class="video">
+                    <img class="img-video" src="cataline.jpg">
+                    <h4>Lógica de programação 09 - Estruturas condicionais</h4>
+                    <p>(Guia RÁPIDO de estudos completo para INICIANTES)<br>Cataline</p>
+                    <button class="watch-button"
+                        onclick="window.location.href='https://www.youtube.com/watch?v=ZAo9T78-32Q'">Assistir</button>
+                </div>
+            </div>
+
+            <div class="image-lampada">
+                <img src="lampada.png" alt="Imagem de Lâmpada" />
+            </div>
+        </div>
+    </div>
+    <div class="container-praticar">
+        <section class="practice">
+            <h2>Vamos Praticar!</h2>
+            <div class="links">
+                <p>Exercício 1: Decidir com base na idade </p>
+                <p>Requisitos: </p>
+                <ul>Perguntar a idade de uma pessoa. </ul>
+                <ul>Imprimir "Criança" se a idade for menor que 12. </ul>
+                <ul>Imprimir "Adolescente" se a idade for entre 12 e 17. </ul>
+                <ul>Imprimir "Adulto" se a idade for 18 ou mais. </ul>
+                <ul>Mensagens mais claras e personalizadas para cada faixa etária. </ul>
+                <ul>Código organizado e fácil de entender para iniciantes. </ul>
+                <h3>Exercício 2: Checar se um número é par ou ímpar </h3>
+                <p>Requisitos: </p>
+                <ul>Pedir ao usuário para inserir um número. </ul>
+                <ul>Usar o operador % para verificar se o número é divisível por 2. </ul>
+                <ul>Imprimir "Par" se o número for divisível por 2, e "Ímpar" caso contrário. </ul>
+
+            </div>
+        </section>
+
+        <section class="conclusion">
+            <h3>Concluindo...</h3>
+            <p class="text-conclucao">
+                As estruturas condicionais mais comuns em C são:
+            </p>
+            <ul>if (se) – Executa um bloco de código se uma condição for verdadeira. </ul>
+            <ul>else (senão) – Executa um bloco de código se a condição no if for falsa. </ul>
+            <ul>else if (senão se) – Testa outra condição se a primeira for falsa. </ul>
+            <ul>Operadores Lógicos – Combina mais de uma condição (usando && para "E", || para "OU", ! para “NÃO”).
+            </ul>
+        </section>
+
+        <section class="next">
+            <a href="index.html" class="next-button">VOLTAR PARA O INICIO<img src="seta.png" alt="seta"
+                    class="seta"></a>
+        </section>
+    </div>
+</body>
+
+</html>
